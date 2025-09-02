@@ -1,3 +1,5 @@
+import DocTemoin from '@/static/DocTemoin.vue';
+import DocVictime from '@/static/DocVictime.vue';
 import HomeView from '@/views/HomeView.vue';
 import About from '@/views/pages/About.vue';
 import Docs from '@/views/pages/Docs.vue';
@@ -50,7 +52,15 @@ const router = createRouter({
             { path: 'serviceType', name: 'show-event', component: ShowEvent },
           ]
         },
-        { path: 'docs', name: 'docs', component: Docs },
+        {
+        path: 'docs',
+        component: Docs,
+          children: [
+            { path: '', name: 'docs', component: DocVictime },
+            { path: 'victime', name: 'docs-victime', component: DocVictime },
+            { path: 'temoin', name: 'docs-temoin', component: DocTemoin },
+          ]
+        },
         { path: 'about', name: 'about', component: About },
       ]
     },
