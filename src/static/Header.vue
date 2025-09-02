@@ -10,11 +10,13 @@ const isActive = (routeName) => {
   if (routeName === 'home') {
     return route.name === 'home'
   } else if (routeName === 'intellegis') {
-    return route.name === 'i-ia' || route.name === 'i-mail'
+    return route.name === 'i-ia' || route.name === 'i-mail' || route.name === 'i-faq'
   } else if (routeName === 'events') {
     return route.name === 'events' || route.name === 'show-event'
   } else if (routeName === 'docs') {
     return route.name === 'docs'
+  } else if (routeName === 'about') {
+    return route.name === 'about'
   }
   return false
 }
@@ -50,7 +52,7 @@ const isActive = (routeName) => {
         <!-- Main navigation that turns into offcanvas on screens < 992px wide (lg breakpoint) -->
         <nav class="offcanvas offcanvas-start" id="navbarNav" tabindex="-1" aria-labelledby="navbarNavLabel">
           <div class="offcanvas-header py-3">
-            <h5 class="offcanvas-title" id="navbarNavLabel">Browse Finder</h5>
+            <h5 class="offcanvas-title" id="navbarNavLabel">Zerovgb</h5>
             <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
           </div>
           <div class="offcanvas-body pt-2 pb-4 py-lg-0 mx-lg-auto">
@@ -75,6 +77,11 @@ const isActive = (routeName) => {
                       Nous contacter par mail
                     </router-link>
                   </li>
+                  <li>
+                    <router-link :to="{name : 'i-faq'}" class="dropdown-item" :class="{ 'active': route.name === 'i-faq' }">
+                      FAQ
+                    </router-link>
+                  </li>
                 </ul>
               </li>
               
@@ -86,6 +93,11 @@ const isActive = (routeName) => {
               <li class="nav-item py-lg-2 me-lg-n2 me-xl-0">
                 <router-link :to="{name : 'docs'}" class="nav-link" :class="{ 'active': isActive('docs') }">
                   Documentations
+                </router-link>
+              </li>
+              <li class="nav-item py-lg-2 me-lg-n2 me-xl-0">
+                <router-link :to="{name : 'about'}" class="nav-link" :class="{ 'active': isActive('about') }">
+                  A propos
                 </router-link>
               </li>
             </ul>

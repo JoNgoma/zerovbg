@@ -1,6 +1,8 @@
 <script setup>
 import { ref, onMounted } from 'vue';
 import { useRouter } from 'vue-router';
+import pnud from "/assets/img/pnud.jpg"
+
 
 import Swiper from 'swiper';
 import { Pagination, EffectCreative, Thumbs, Autoplay } from 'swiper/modules';
@@ -131,17 +133,17 @@ function showResource() {
                     <div class="swiper-wrapper">
                       <div class="swiper-slide">
                         <div class="ratio" style="--fn-aspect-ratio: calc(344 / 416 * 100%)">
-                          <img src="/assets/img/home/doctors/hero-slider/01.jpg" alt="Image">
+                          <img src="/assets/img/home/doctors/hero-slider/01.jpeg" alt="Image">
                         </div>
                       </div>
                       <div class="swiper-slide">
                         <div class="ratio" style="--fn-aspect-ratio: calc(344 / 416 * 100%)">
-                          <img src="/assets/img/home/doctors/hero-slider/02.jpg" alt="Image">
+                          <img src="/assets/img/home/doctors/hero-slider/02.jpeg" alt="Image">
                         </div>
                       </div>
                       <div class="swiper-slide">
                         <div class="ratio" style="--fn-aspect-ratio: calc(344 / 416 * 100%)">
-                          <img src="/assets/img/home/doctors/hero-slider/03.jpg" alt="Image">
+                          <img src="/assets/img/home/doctors/hero-slider/03.jpeg" alt="Image">
                         </div>
                       </div>
                     </div>
@@ -160,39 +162,39 @@ function showResource() {
                     <div class="swiper-wrapper">
                       <div class="swiper-slide swiper-thumb rounded-circle p-2">
                         <div class="ratio ratio-1x1 rounded-circle overflow-hidden">
-                          <img src="/assets/img/home/doctors/hero-slider/th01.jpg" class="swiper-thumb-img" alt="Thumbnail">
+                          <img src="/assets/img/home/doctors/hero-slider/th01.jpeg" class="swiper-thumb-img" alt="Thumbnail">
                         </div>
                         <div class="position-absolute top-50 start-50 translate-middle d-flex align-items-center justify-content-center opacity-0" style="width: 150%; height: 150%">
                           <svg class="animate-spin" width="144" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" style="animation-duration: 22s">
                             <path id="circlePath" fill="none" d="M 10, 50a 40,40 0 1,1 80,0a 40,40 0 1,1 -80,0"></path>
                             <text id="text" font-size="9.4" fill="rgba(255,255,255, .65)" style="letter-spacing: -.05">
-                              <textPath id="textPath" href="#circlePath">More than 20,000 users received qualified medical care</textPath>
+                              <textPath id="textPath" href="#circlePath">Exprimer librement les violences basées sur le genre</textPath>
                             </text>
                           </svg>
                         </div>
                       </div>
                       <div class="swiper-slide swiper-thumb rounded-circle p-2">
                         <div class="ratio ratio-1x1 rounded-circle overflow-hidden">
-                          <img src="/assets/img/home/doctors/hero-slider/th02.jpg" class="swiper-thumb-img" alt="Thumbnail">
+                          <img src="/assets/img/home/doctors/hero-slider/th02.jpeg" class="swiper-thumb-img" alt="Thumbnail">
                         </div>
                         <div class="position-absolute top-50 start-50 translate-middle d-flex align-items-center justify-content-center opacity-0" style="width: 150%; height: 150%">
                           <svg class="animate-spin" width="144" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" style="animation-duration: 22s">
                             <path id="circlePath" fill="none" d="M 10, 50a 40,40 0 1,1 80,0a 40,40 0 1,1 -80,0"></path>
                             <text id="text" font-size="9.4" fill="rgba(255,255,255, .65)" style="letter-spacing: -.05">
-                              <textPath id="textPath" href="#circlePath">More than 20,000 users received qualified medical care</textPath>
+                              <textPath id="textPath" href="#circlePath">Exprimer librement les violences basées sur le genre</textPath>
                             </text>
                           </svg>
                         </div>
                       </div>
                       <div class="swiper-slide swiper-thumb rounded-circle p-2">
                         <div class="ratio ratio-1x1 rounded-circle overflow-hidden">
-                          <img src="/assets/img/home/doctors/hero-slider/th03.jpg" class="swiper-thumb-img" alt="Thumbnail">
+                          <img src="/assets/img/home/doctors/hero-slider/th03.jpeg" class="swiper-thumb-img" alt="Thumbnail">
                         </div>
                         <div class="position-absolute top-50 start-50 translate-middle d-flex align-items-center justify-content-center opacity-0" style="width: 150%; height: 150%">
                           <svg class="animate-spin" width="144" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" style="animation-duration: 22s">
                             <path id="circlePath" fill="none" d="M 10, 50a 40,40 0 1,1 80,0a 40,40 0 1,1 -80,0"></path>
                             <text id="text" font-size="9.4" fill="rgba(255,255,255, .65)" style="letter-spacing: -.05">
-                              <textPath id="textPath" href="#circlePath">More than 20,000 users received qualified medical care</textPath>
+                              <textPath id="textPath" href="#circlePath">Exprimer librement les violences basées sur le genre</textPath>
                             </text>
                           </svg>
                         </div>
@@ -216,8 +218,8 @@ function showResource() {
             </div>
             <div class="position-relative rounded overflow-hidden mt-auto d-none d-lg-block">
               <div class="ratio bg-body-tertiary z-1" style="--fn-aspect-ratio: calc(252 / 416 * 100%)">
-                <img src="/assets/img/home/doctors/popular-searches-light.png" class="d-none-dark" alt="Image">
-                <img src="/assets/img/home/doctors/popular-searches-dark.png" class="d-none d-block-dark" alt="Image">
+                <img src="/assets/img/home/doctors/popular-searches-light.jpeg" class="d-none-dark" alt="Image">
+                <img src="/assets/img/home/doctors/popular-searches-dark.jpeg" class="d-none d-block-dark" alt="Image">
               </div>
               <span class="position-absolute top-0 start-0 w-100 h-100 bg-body-tertiary d-none d-block-dark"></span>
             </div>
@@ -416,22 +418,24 @@ function showResource() {
               <article class="card h-100 hover-effect-scale">
                 <div class="card-img-top bg-body-tertiary overflow-hidden">
                   <div class="ratio hover-effect-target" style="--fn-aspect-ratio: calc(230 / 416 * 100%)">
-                    <img src="/assets/img/home/doctors/consultation/01.jpg" alt="Image">
+                    <img src="/assets/img/home/doctors/consultation/01.jpeg" alt="Image">
                   </div>
                 </div>
                 <div class="card-body p-3">
                   <h3 class="h4 pt-1 mb-2">
-                    <a class="hover-effect-underline stretched-link" href="listings-list-doctors.html">Optometrist</a>
+                    <a class="hover-effect-underline stretched-link" href="#">Témoignages & Espoir</a>
                   </h3>
-                  <p class="fs-sm mb-0">Providing comprehensive eye exams, vision correction, and eye health services to ensure optimal visual performance and eye care.</p>
+                  <p class="fs-sm mb-0">
+                    Parce qu’il est parfois difficile de trouver les mots, cette vidéo vous partage des histoires 
+                    vraies, des conseils et des informations pratiques. Elle est là pour vous rassurer, vous 
+                    orienter et vous rappeler que vous n’êtes pas seul(e).</p>
                 </div>
                 <div class="card-footer d-flex flex-wrap justify-content-between gap-3 bg-transparent border-0 pt-1 pt-sm-2 pt-xl-3 pb-3 px-3">
                   <div class="d-flex align-items-center gap-2">
-                    <div class="h4 mb-0">$50.00</div>
-                    <del class="fs-sm text-body-secondary">$75.00</del>
+                    <div class="fs-sm text-body-secondary">Assistance en vidéo</div>
                   </div>
                   <button type="button" class="btn btn-outline-primary position-relative z-2">
-                    Book an appointment
+                    Lire la vidéo
                   </button>
                 </div>
               </article>
@@ -447,17 +451,19 @@ function showResource() {
                 </div>
                 <div class="card-body p-3">
                   <h3 class="h4 pt-1 mb-2">
-                    <a class="hover-effect-underline stretched-link" href="listings-list-doctors.html">Therapist</a>
+                    <a class="hover-effect-underline stretched-link" href="#">Guide pratique d’assistance</a>
                   </h3>
-                  <p class="fs-sm mb-0">Offering professional mental health support and therapeutic services, address emotional challenges, and improve overall well-being.</p>
+                  <p class="fs-sm mb-0">
+                    Retrouvez ici des témoignages inspirants, ainsi que des explications claires sur les 
+                    services d’assistance disponibles : soins médicaux, aide juridique, soutien psychologique…
+                    Des ressources simples et accessibles, présentées pour vous accompagner.</p>
                 </div>
                 <div class="card-footer d-flex flex-wrap justify-content-between gap-3 bg-transparent border-0 pt-1 pt-sm-2 pt-xl-3 pb-3 px-3">
                   <div class="d-flex align-items-center gap-2">
-                    <div class="h4 mb-0">$35.00</div>
-                    <del class="fs-sm text-body-secondary">$45.00</del>
+                    <div class="fs-sm text-body-secondary">Découvrez en vidéo</div>
                   </div>
                   <button type="button" class="btn btn-outline-primary position-relative z-2">
-                    Book an appointment
+                    Lire la vidéo
                   </button>
                 </div>
               </article>
@@ -473,17 +479,19 @@ function showResource() {
                 </div>
                 <div class="card-body p-3">
                   <h3 class="h4 pt-1 mb-2">
-                    <a class="hover-effect-underline stretched-link" href="listings-list-doctors.html">Dentist</a>
+                    <a class="hover-effect-underline stretched-link" href="listings-list-doctors.html">Engagement & Soutien des partenaires</a>
                   </h3>
-                  <p class="fs-sm mb-0">Delivering high-quality dental care, including cleanings, fillings, preventative treatments, and restorative procedures to maintain healthy teeth and gums.</p>
+                  <p class="fs-sm mb-0">
+                    Que vous soyez victime, témoin ou proche, ces vidéos vous aideront à comprendre les étapes 
+                    essentielles pour agir. Regardez, informez-vous, et trouvez le soutien nécessaire pour 
+                    avancer.</p>
                 </div>
                 <div class="card-footer d-flex flex-wrap justify-content-between gap-3 bg-transparent border-0 pt-1 pt-sm-2 pt-xl-3 pb-3 px-3">
                   <div class="d-flex align-items-center gap-2">
-                    <div class="h4 mb-0">$60.00</div>
-                    <del class="fs-sm text-body-secondary">$90.00</del>
+                    <div class="fs-sm text-body-secondary">Vidéo pour vous guider</div>
                   </div>
                   <button type="button" class="btn btn-outline-primary position-relative z-2">
-                    Book an appointment
+                    Lire la vidéo
                   </button>
                 </div>
               </article>
@@ -495,5 +503,99 @@ function showResource() {
         </div>
       </section>
 
+      <!-- Registration CTA -->
+      <section class="container pb-2 pb-sm-3 pb-md-4 pb-lg-5 my-xxl-3">
+        <div class="bg-info rounded py-5 px-4 px-md-0 mb-5">
+          <div class="row align-items-center py-md-2 py-lg-3 my-xl-3">
+            <div class="col-md-7 col-lg-8 offset-md-1 pb-3 pb-md-0 mb-3 mb-md-0">
+              <h2 class="h1 text-white text-center text-md-start mb-4">Parler à un expert maintenant</h2>
+              <div class="d-flex flex-wrap flex-md-nowrap justify-content-center justify-content-md-start gap-3 gap-sm-4 gap-xl-5">
+                <div class="d-flex align-items-center me-1 me-sm-0">
+                  <div class="d-flex align-items-center justify-content-center flex-shrink-0 fs-sm fw-medium text-white border border-white rounded-circle" style="width: 2rem; height: 2rem">1</div>
+                  <div class="fs-sm fw-medium text-white ps-2 ms-1">Par mail</div>
+                </div>
+                <div class="d-flex align-items-center me-1 me-sm-0">
+                  <div class="d-flex align-items-center justify-content-center flex-shrink-0 fs-sm fw-medium text-white border border-white rounded-circle" style="width: 2rem; height: 2rem">2</div>
+                  <div class="fs-sm fw-medium text-white ps-2 ms-1">Par Whatsapp</div>
+                </div>
+                <div class="d-flex align-items-center me-1 me-sm-0">
+                  <div class="d-flex align-items-center justify-content-center flex-shrink-0 fs-sm fw-medium text-white border border-white rounded-circle" style="width: 2rem; height: 2rem">3</div>
+                  <div class="fs-sm fw-medium text-white ps-2 ms-1">Par Appel</div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3 col-lg-2 d-flex justify-content-center justify-content-md-end">
+              <a class="btn btn-lg btn-primary" href="account-signup.html">Cliquer ici</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Benefits -->
+      <section class="bg-info py-5">
+        <div class="container py-2 py-sm-3 py-md-4 py-lg-5 my-xxl-3">
+          <h2 class="h1 text-white mb-2 mb-md-3">PNUD et Objectifs de Développement Durable</h2>
+          <p class="text-white opacity-75 pb-2 pb-md-3 pb-lg-4">
+            Le Programme des Nations Unies pour le développement (PNUD) accompagne les États et les 
+            communautés dans la lutte contre les violences basées sur le genre (VBG), en mettant 
+            l’accent sur la prévention, l’accès à la justice, la protection des victimes et la 
+            promotion de l’égalité.<br/>
+          Ces actions s’inscrivent directement dans les Objectifs de Développement Durable (ODD), 
+          notamment :</p>
+          <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 gy-4 gx-5 pb-2 pb-lg-3">
+            <div class="col">
+              <h3 class="h4 text-white mb-2 mb-md-3">ODD 5</h3>
+              <div class="text-white mb-0" style="max-width: 370px">
+                Égalité entre les sexes <br/>
+                <ul>
+                  <li class="text-white opacity-75">
+                    Eliminer toutes les formes de violence à l’égard des femmes et des filles.
+                  </li>
+                </ul> 
+              </div>
+            </div>
+            <div class="col">
+              <h3 class="h4 text-white mb-2 mb-md-3">ODD 3</h3>
+              <p class="text-white mb-0" style="max-width: 370px">
+                Bonne santé et bien-être<br/>
+                <ul>
+                  <li class="text-white opacity-75">
+                    Garantir une vie saine et promouvoir le bien-être de tous.
+                  </li>
+                </ul> 
+              </p>
+            </div>
+            <div class="col">
+              <h3 class="h4 text-white mb-2 mb-md-3">ODD 16</h3>
+              <p class="text-white mb-0" style="max-width: 370px">
+                Paix, justice et institutions efficaces <br/>
+                <ul>
+                  <li class="text-white opacity-75">
+                    Protéger les droits humains et assurer un accès équitable à la justice.
+                  </li>
+                </ul> 
+              </p>
+            </div>
+          </div>
+          <hr data-bs-theme="light" style="opacity: .2">
+          <div class="row gx-5 pt-2 pt-lg-3 justify-content-center" data-bs-theme="light">
+  <div class="col-12 col-md-4 d-flex flex-column align-items-center text-center"
+       style="color: var(--fn-primary-border-subtle)">
+       
+    <!-- Image -->
+    <a href="https://fikiri.co" aria-label="PNUD">
+      <img :src="pnud" alt="PNUD" style="height: 5rem; width: auto;" />
+    </a>
+
+    <!-- Texte -->
+    <div class="mt-3" style="max-width: 140px;">
+      PNUD <br/> ZEROVBG
+    </div>
+  </div>
+</div>
+
+        </div>
+      </section>
+      
     </main>
 </template>

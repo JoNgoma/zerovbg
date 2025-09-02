@@ -15,25 +15,19 @@ const router = useRouter()
           <div class="col-sm-4 col-md-2 col-xl-3">
             <div class="accordion-item border-0">
               <h6 class="accordion-header" id="forPatientsHeading">
-                <span class="d-none d-sm-block pb-1 mb-2">For patients</span>
+                <span class="d-none d-sm-block pb-1 mb-2">Home</span>
                 <button type="button" class="accordion-button collapsed py-3 d-sm-none" data-bs-toggle="collapse" data-bs-target="#forPatients" aria-expanded="false" aria-controls="forPatients">For patients</button>
               </h6>
               <div class="accordion-collapse collapse d-sm-block" id="forPatients" aria-labelledby="forPatientsHeading" data-bs-parent="#footerLinks">
                 <ul class="nav flex-column gap-2 pt-sm-1 pt-lg-2 pb-3 pb-sm-0 mt-n1 mb-1 mb-sm-0">
                   <li class="pt-1">
-                    <a class="nav-link hover-effect-underline d-inline text-body fw-normal p-0" href="#!">Family medicine</a>
+                    <router-link :to="{name : 'home'}" class="nav-link hover-effect-underline d-inline text-body fw-normal p-0">Accueil</router-link>
                   </li>
                   <li class="pt-1">
-                    <a class="nav-link hover-effect-underline d-inline text-body fw-normal p-0" href="#!">Pediatrics</a>
+                    <router-link :to="{name : 'events'}" class="nav-link hover-effect-underline d-inline text-body fw-normal p-0">Evénements</router-link>
                   </li>
                   <li class="pt-1">
-                    <a class="nav-link hover-effect-underline d-inline text-body fw-normal p-0" href="#!">Top hospitals</a>
-                  </li>
-                  <li class="pt-1">
-                    <a class="nav-link hover-effect-underline d-inline text-body fw-normal p-0" href="#!">Telehealth</a>
-                  </li>
-                  <li class="pt-1">
-                    <a class="nav-link hover-effect-underline d-inline text-body fw-normal p-0" href="#!">Dentistry</a>
+                    <a class="nav-link hover-effect-underline d-inline text-body fw-normal p-0" href="https://fikiri.co">PNUD</a>
                   </li>
                 </ul>
               </div>
@@ -43,25 +37,19 @@ const router = useRouter()
           <div class="col-sm-4 col-md-3">
             <div class="accordion-item border-0">
               <h6 class="accordion-header" id="forProvidersHeading">
-                <span class="d-none d-sm-block pb-1 mb-2">For providers</span>
+                <span class="d-none d-sm-block pb-1 mb-2">Intellegis</span>
                 <button type="button" class="accordion-button collapsed py-3 d-sm-none" data-bs-toggle="collapse" data-bs-target="#forProviders" aria-expanded="false" aria-controls="forProviders">For providers</button>
               </h6>
               <div class="accordion-collapse collapse d-sm-block" id="forProviders" aria-labelledby="forProvidersHeading" data-bs-parent="#footerLinks">
                 <ul class="nav flex-column gap-2 pt-sm-1 pt-lg-2 pb-3 pb-sm-0 mt-n1 mb-1 mb-sm-0">
                   <li class="pt-1">
-                    <a class="nav-link hover-effect-underline d-inline text-body fw-normal p-0" href="#!">Provider log in</a>
+                    <router-link :to="{name : 'i-ia'}" class="nav-link hover-effect-underline d-inline text-body fw-normal p-0">Assitance virtuelle</router-link>
                   </li>
                   <li class="pt-1">
-                    <a class="nav-link hover-effect-underline d-inline text-body fw-normal p-0" href="#!">Promote your practice</a>
+                    <router-link :to="{name : 'i-mail'}" class="nav-link hover-effect-underline d-inline text-body fw-normal p-0">Nous contacter par mail</router-link>
                   </li>
                   <li class="pt-1">
-                    <a class="nav-link hover-effect-underline d-inline text-body fw-normal p-0" href="#!">Claim your free profile</a>
-                  </li>
-                  <li class="pt-1">
-                    <a class="nav-link hover-effect-underline d-inline text-body fw-normal p-0" href="#!">News and features</a>
-                  </li>
-                  <li class="pt-1">
-                    <a class="nav-link hover-effect-underline d-inline text-body fw-normal p-0" href="#!">Help center</a>
+                    <router-link :to="{name : 'i-faq'}" class="nav-link hover-effect-underline d-inline text-body fw-normal p-0">FAQ</router-link>
                   </li>
                 </ul>
               </div>
@@ -71,22 +59,16 @@ const router = useRouter()
           <div class="col-sm-4 col-md-3">
             <div class="accordion-item border-0">
               <h6 class="accordion-header" id="ourCompanyHeading">
-                <span class="d-none d-sm-block pb-1 mb-2">Our company</span>
+                <span class="d-none d-sm-block pb-1 mb-2">Aide</span>
                 <button type="button" class="accordion-button collapsed py-3 d-sm-none" data-bs-toggle="collapse" data-bs-target="#ourCompany" aria-expanded="false" aria-controls="ourCompany">Our company</button>
               </h6>
               <div class="accordion-collapse collapse d-sm-block" id="ourCompany" aria-labelledby="ourCompanyHeading" data-bs-parent="#footerLinks">
                 <ul class="nav flex-column gap-2 pt-sm-1 pt-lg-2 pb-3 pb-sm-0 mt-n1 mb-1 mb-sm-0">
                   <li class="pt-1">
-                    <a class="nav-link hover-effect-underline d-inline text-body fw-normal p-0" href="#!">Contact us</a>
+                    <router-link :to="{name : 'docs'}" class="nav-link hover-effect-underline d-inline text-body fw-normal p-0">Documentations</router-link>
                   </li>
                   <li class="pt-1">
-                    <a class="nav-link hover-effect-underline d-inline text-body fw-normal p-0" href="#!">About us</a>
-                  </li>
-                  <li class="pt-1">
-                    <a class="nav-link hover-effect-underline d-inline text-body fw-normal p-0" href="#!">Healthgrades methodologies</a>
-                  </li>
-                  <li class="pt-1">
-                    <a class="nav-link hover-effect-underline d-inline text-body fw-normal p-0" href="#!">Privacy preferences</a>
+                    <router-link :to="{name : 'about'}" class="nav-link hover-effect-underline d-inline text-body fw-normal p-0">A propos</router-link>
                   </li>
                 </ul>
               </div>
@@ -96,13 +78,13 @@ const router = useRouter()
 
           <!-- Subscription form -->
           <div class="col-md-4 col-xl-3 pt-4 pt-sm-5 pt-md-0 mt-3 mt-sm-0">
-            <h6 class="pb-1 pb-lg-0 mb-lg-4">Subscribe to our newsletter</h6>
+            <h6 class="pb-1 pb-lg-0 mb-lg-4">Souscrire à nos mails</h6>
             <form class="d-flex flex-column flex-sm-row flex-md-column gap-3 needs-validation" novalidate="">
               <div class="position-relative w-100">
                 <i class="fi-mail position-absolute top-50 start-0 translate-middle-y text-body ms-3"></i>
                 <input type="email" class="form-control form-icon-start text-start" placeholder="Your email" aria-label="Email input" required="">
               </div>
-              <button type="submit" class="btn btn-outline-dark px-4">Subscribe</button>
+              <button type="submit" class="btn btn-outline-dark px-4">Souscrire</button>
             </form>
           </div>
         </div>
@@ -120,7 +102,7 @@ const router = useRouter()
               <i class="fi-x"></i>
             </a>
           </div>
-          <p class="text-body-secondary fs-sm text-center mb-0 order-sm-1">© All rights reserved. Made by <a class="text-body fw-medium text-decoration-none hover-effect-underline" href="https://createx.studio/" target="_blank" rel="noreferrer">Createx Studio</a></p>
+          <p class="text-body-secondary fs-sm text-center mb-0 order-sm-1">© Tout droit reservé. <a class="text-body fw-medium text-decoration-none hover-effect-underline" href="https://fikiri.co" target="_blank" rel="noreferrer">PNUD RDC</a></p>
         </div>
       </div>
     </footer>
