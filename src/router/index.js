@@ -9,7 +9,7 @@ import Home from '@/views/pages/Home.vue';
 import IA from '@/views/pages/IA.vue';
 import Mail from '@/views/pages/Mail.vue';
 import ShowEvent from '@/views/pages/ShowEvent.vue';
-import { createRouter, createWebHistory } from 'vue-router';
+import { createRouter, createWebHashHistory } from 'vue-router';
 
 // clé unique pour chaque onglet (sessionStorage est isolé par onglet)
 const SESSION_KEY = 'scrollPositions'
@@ -29,7 +29,7 @@ function saveScrollPositions(positions) {
 }
 
 const router = createRouter({
-  history: createWebHistory(import.meta.env.BASE_URL),
+  history: createWebHashHistory(import.meta.env.BASE_URL),
   routes: [
     {
       path: '/',
