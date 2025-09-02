@@ -84,7 +84,7 @@ function submitForm() {
           </div>
         </div>
         <div class="position-absolute top-0 end-0 h-100 bg-body-tertiary rounded overflow-hidden d-none d-lg-block me-4" style="width: 49%;">
-          <img src="/assets/img/contact/v1/hero.jpg" class="position-absolute top-0 start-0 w-100 h-100 object-fit-cover" alt="Image">
+          <img src="/assets/img/home/doctors/steps/mail.jpeg" class="position-absolute top-0 start-0 w-100 h-100 object-fit-cover" alt="Image">
         </div>
       </section>
 

@@ -62,54 +62,54 @@ const router = useRouter();
             <!-- Article -->
             <article class="swiper-slide">
               <a class="ratio d-flex hover-effect-scale rounded overflow-hidden mb-3 mb-sm-4" href="#!" style="--fn-aspect-ratio: calc(300 / 416 * 100%)">
-                <img src="/assets/img/blog/v1/02.jpg" class="hover-effect-target" alt="Image">
+                <img src="/assets/img/home/doctors/steps/sensib.jpeg" class="hover-effect-target" alt="Image">
               </a>
               <div class="nav pb-1 mb-2">
-                <a class="nav-link text-body-secondary fs-xs text-uppercase p-0" href="#!">Investment advice</a>
+                <a class="nav-link text-body-secondary fs-xs text-uppercase p-0" href="#!">Atelier de sensibilisation</a>
               </div>
               <h3 class="h5 mb-2">
-                <a class="hover-effect-underline" href="#!">Types of luxury housing</a>
+                <a class="hover-effect-underline" href="#!">Former les jeunes leaders contre les VBG</a>
               </h3>
-              <p class="fs-sm">What luxury housing is clear to every person. Housing characterized by increased comfort, interior, quality and ma...</p>
+              <p class="fs-sm">Un atelier interactif a rassemblé étudiants, associations et autorités locales pour discuter des solutions concrètes afin d’éliminer les violences basées sur le genre et promouvoir l’égalité.</p>
               <div class="nav fs-sm gap-3">
-                <a class="nav-link fw-semibold p-0" href="#!">by Kristin Watson</a>
-                <span class="text-body-secondary">July 09, 2024</span>
+                <a class="nav-link fw-semibold p-0" href="#!">par PNUD</a>
+                <span class="text-body-secondary">10 octobre 2024</span>
               </div>
             </article>
 
             <!-- Article -->
             <article class="swiper-slide">
               <a class="ratio d-flex hover-effect-scale rounded overflow-hidden mb-3 mb-sm-4" href="#!" style="--fn-aspect-ratio: calc(300 / 416 * 100%)">
-                <img src="/assets/img/blog/v1/01.jpg" class="hover-effect-target" alt="Image">
+                <img src="/assets/img/home/doctors/steps/sensib2.jpeg" class="hover-effect-target" alt="Image">
               </a>
               <div class="nav pb-1 mb-2">
-                <a class="nav-link text-body-secondary fs-xs text-uppercase p-0" href="#!">Renting advice</a>
+                <a class="nav-link text-body-secondary fs-xs text-uppercase p-0" href="#!">Atelier de sensibilisation</a>
               </div>
               <h3 class="h5 mb-2">
-                <a class="hover-effect-underline" href="#!">What to know when renting an apartment</a>
+                <a class="hover-effect-underline" href="#!">Former les jeunes leaders contre les VBG</a>
               </h3>
-              <p class="fs-sm">It is quite difficult to find a good apartment for long-term rent in large cities. In addition, potential tenants can face prob...</p>
+              <p class="fs-sm">Un atelier interactif a rassemblé étudiants, associations et autorités locales pour discuter des solutions concrètes afin d’éliminer les violences basées sur le genre et promouvoir l’égalité.</p>
               <div class="nav fs-sm gap-3">
-                <a class="nav-link fw-semibold p-0" href="#!">by Cody Fisher</a>
-                <span class="text-body-secondary">June 26, 2024</span>
+                <a class="nav-link fw-semibold p-0" href="#!">par PNUD</a>
+                <span class="text-body-secondary">10 Mars 2024</span>
               </div>
             </article>
 
             <!-- Article -->
             <article class="swiper-slide">
               <a class="ratio d-flex hover-effect-scale rounded overflow-hidden mb-3 mb-sm-4" href="#!" style="--fn-aspect-ratio: calc(300 / 416 * 100%)">
-                <img src="/assets/img/blog/v1/08.jpg" class="hover-effect-target" alt="Image">
+                <img src="/assets/img/home/doctors/steps/conf.jpeg" class="hover-effect-target" alt="Image">
               </a>
               <div class="nav pb-1 mb-2">
-                <a class="nav-link text-body-secondary fs-xs text-uppercase p-0" href="#!">Interior design</a>
+                <a class="nav-link text-body-secondary fs-xs text-uppercase p-0" href="#!">Conférence</a>
               </div>
               <h3 class="h5 mb-2">
-                <a class="hover-effect-underline" href="#!">7 tips for achieving maximum coziness</a>
+                <a class="hover-effect-underline" href="#!">Justice et droits humains : agir contre les VBG</a>
               </h3>
-              <p class="fs-sm">Creating a cozy atmosphere in your home is a delightful way to enhance comfort and relaxation. Here are seven tips to...</p>
+              <p class="fs-sm">Des experts en droit, en santé et en développement ont échangé sur les meilleures pratiques pour protéger les victimes, assurer l’accès à la justice et renforcer les mécanismes de prévention.</p>
               <div class="nav fs-sm gap-3">
-                <a class="nav-link fw-semibold p-0" href="#!">by Bessie Cooper</a>
-                <span class="text-body-secondary">March 10, 2024</span>
+                <a class="nav-link fw-semibold p-0" href="#!">par ONU Femmes</a>
+                <span class="text-body-secondary">5 décembre 2025</span>
               </div>
             </article>
           </div>

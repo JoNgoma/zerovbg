@@ -2,61 +2,83 @@
 import { useRouter } from 'vue-router'
 
 const router = useRouter()
-
 </script>
 
 <template>
   <!-- Page Victime -->
+  <div class="d-flex align-items-start border-bottom ps-md-4 pb-3 pb-sm-4">
+    <h2 class="h5 d-flex min-w-0 mb-0">
+      <span class="d-md-none">Etes-vous une victime ?</span>
+      <span class="text-truncate d-none d-md-inline">Etes-vous une victime ?</span>
+    </h2>
+  </div>
+  <div class="position-relative">
+    <div class="position-absolute top-0 start-0 h-100 border-start d-none d-md-block"></div>
     <div class="row g-0">
-                <div class="col-xl-11 col-xxl-10 pt-4 ps-md-4">
-                  <p>When you rent a property, it's important to understand exactly what is included in your rental accommodation to ensure that it meets your needs and expectations. Here's a breakdown of the typical inclusions and what you should consider:</p>
-                  <h3 class="h6 pt-2 pt-lg-3">1. Furnishings</h3>
-                  <p>The level of furnishing can vary significantly between rental properties. Typically, rental accommodations are categorized as:</p>
-                  <ul>
-                    <li><span class="text-body-emphasis fw-medium">Fully furnished:</span> Includes essential furniture such as beds, sofas, dining tables, chairs, and sometimes even decor items like lamps, artwork, and rugs. Kitchens are usually equipped with basic appliances and utensils.</li>
-                    <li><span class="text-body-emphasis fw-medium">Partially furnished:</span> Includes some essential furniture but may not have everything you need. For example, the property might include a bed and sofa, but you'll need to provide your own kitchenware and additional furnishings.</li>
-                    <li><span class="text-body-emphasis fw-medium">Unfurnished:</span> Contains no furniture or only basic appliances like a stove and refrigerator. This option gives you the freedom to furnish the space according to your taste but requires an initial investment in furniture.</li>
-                  </ul>
-                  <h3 class="h6 pt-2 pt-lg-3">2. Appliances</h3>
-                  <p>Most rental accommodations include essential appliances, but the specific items can vary:</p>
-                  <ul>
-                    <li><span class="text-body-emphasis fw-medium">Kitchen appliances:</span> Standard inclusions often cover a refrigerator, stove/oven, and microwave. Some rentals may also include a dishwasher, toaster, and coffee maker.</li>
-                    <li><span class="text-body-emphasis fw-medium">Laundry:</span> Depending on the property, you might have an in-unit washer and dryer, access to shared laundry facilities, or no laundry facilities at all.</li>
-                    <li><span class="text-body-emphasis fw-medium">Heating and cooling:</span> Central heating and air conditioning are common, but some properties may only have portable heaters or window A/C units. It's important to check what's available to ensure comfort throughout the year.</li>
-                  </ul>
-                  <h3 class="h6 pt-2 pt-lg-3">3. Utilities</h3>
-                  <p>Utilities are sometimes included in the rent, but this varies by property:</p>
-                  <ul>
-                    <li><span class="text-body-emphasis fw-medium">Included utilities:</span> Some rentals include the cost of water, electricity, gas, heating, and even internet or cable in the rent. This can simplify budgeting, as you won't have separate utility bills to pay.</li>
-                    <li><span class="text-body-emphasis fw-medium">Excluded utilities:</span> If utilities are not included, you'll be responsible for setting up and paying for these services separately. Be sure to ask for an estimate of monthly utility costs so you can budget accordingly.</li>
-                  </ul>
-                  <h3 class="h6 pt-2 pt-lg-3">4. Internet and cable</h3>
-                  <p>Some rental accommodations come with pre-installed internet and cable services, either included in the rent or available as an add-on. If these services are not provided, you'll need to arrange for installation and pay for them separately.</p>
-                  <h3 class="h6 pt-2 pt-lg-3">5. Maintenance and repairs</h3>
-                  <p>Most rental agreements specify that the landlord is responsible for the maintenance and repair of essential services like plumbing, heating, and electrical systems. However, tenants are usually responsible for minor maintenance, such as changing light bulbs or keeping the property clean.</p>
-                  <ul>
-                    <li><span class="text-body-emphasis fw-medium">Emergency repairs:</span> It's important to know how to report urgent issues, such as leaks or heating failures, and what the expected response time is.</li>
-                  </ul>
-                  <h3 class="h6 pt-2 pt-lg-3">6. Parking</h3>
-                  <p>If you have a vehicle, parking is an essential consideration:</p>
-                  <ul>
-                    <li><span class="text-body-emphasis fw-medium">Included parking:</span> Some properties offer dedicated parking spaces, either in a garage or an outdoor lot, as part of the rental agreement.</li>
-                    <li><span class="text-body-emphasis fw-medium">Additional parking:</span> In some cases, parking is available but at an additional cost, or you may need to apply for a permit for street parking.</li>
-                  </ul>
-                  <h3 class="h6 pt-2 pt-lg-3">7. Outdoor space</h3>
-                  <p>Depending on the property type, you may have access to outdoor areas:</p>
-                  <ul>
-                    <li><span class="text-body-emphasis fw-medium">Private outdoor space:</span> Some rentals include a private balcony, patio, or yard, which is typically your responsibility to maintain.</li>
-                    <li><span class="text-body-emphasis fw-medium">Shared outdoor areas:</span> In multi-unit buildings, you might have access to shared spaces like gardens, courtyards, or rooftop terraces.</li>
-                  </ul>
-                  <h3 class="h6 pt-2 pt-lg-3">8. Lease terms</h3>
-                  <p>The inclusions and responsibilities associated with your rental accommodation should be clearly outlined in your lease agreement. This document will specify what is covered by your rent and what additional costs or responsibilities you may incur.</p>
-                  <h3 class="h6 pt-2 pt-lg-3">9. Tenant's responsibilities</h3>
-                  <p>While the landlord typically covers major maintenance and repairs, you may be responsible for maintaining cleanliness, minor repairs, and following specific rules regarding the use of shared facilities.</p>
-                  <h3 class="h6 pt-2 pt-lg-3">Conclusion</h3>
-                  <p>Understanding what is included in your rental accommodation is essential for avoiding surprises and ensuring that the property meets your needs. Always clarify with the landlord or property manager exactly what is provided and what you're responsible for before signing the lease.</p>
-                </div>
-              </div>
+      <div class="col-xl-11 col-xxl-10 pt-4 ps-md-4">
+        <p>
+          Être victime de violences basées sur le genre (VBG) est une expérience difficile et bouleversante. 
+          Il est important de savoir que vous n’êtes pas seul·e et qu’il existe des ressources pour vous protéger, 
+          vous soigner et vous accompagner. Voici quelques étapes essentielles à connaître :
+        </p>
+
+        <h3 class="h6 pt-2 pt-lg-3">1. Trouver un endroit sûr</h3>
+        <p>
+          Votre sécurité est la priorité. Si vous êtes en danger immédiat :
+        </p>
+        <ul>
+          <li>Cherchez à vous mettre à l’abri (chez un proche, voisin, lieu public sécurisé).</li>
+          <li>Appelez les numéros d’urgence (police, services spécialisés).</li>
+        </ul>
+
+        <h3 class="h6 pt-2 pt-lg-3">2. Prendre soin de sa santé</h3>
+        <p>
+          Les violences peuvent avoir des conséquences physiques et psychologiques. Il est important de :
+        </p>
+        <ul>
+          <li>Consulter rapidement un médecin ou un centre de santé spécialisé.</li>
+          <li>Demander un certificat médical qui pourra servir de preuve.</li>
+          <li>Accéder à un soutien psychologique si nécessaire.</li>
+        </ul>
+
+        <h3 class="h6 pt-2 pt-lg-3">3. Signaler et chercher justice</h3>
+        <p>
+          Le signalement est une étape importante pour obtenir protection et justice :
+        </p>
+        <ul>
+          <li>Porter plainte auprès des autorités compétentes (police, gendarmerie, justice).</li>
+          <li>Contacter les associations spécialisées qui peuvent vous assister gratuitement.</li>
+        </ul>
+
+        <h3 class="h6 pt-2 pt-lg-3">4. Chercher du soutien</h3>
+        <p>
+          Vous n’avez pas à traverser cette épreuve seul·e :
+        </p>
+        <ul>
+          <li>Appelez les lignes d’assistance dédiées aux victimes de VBG.</li>
+          <li>Rejoignez des groupes de soutien ou des associations de défense des droits.</li>
+          <li>Confiez-vous à une personne de confiance.</li>
+        </ul>
+
+        <h3 class="h6 pt-2 pt-lg-3">5. Connaître ses droits</h3>
+        <p>
+          Vous avez le droit à :
+        </p>
+        <ul>
+          <li>La protection contre l’auteur des violences.</li>
+          <li>L’accès gratuit à certains soins médicaux et psychologiques (selon votre pays).</li>
+          <li>L’assistance juridique et sociale.</li>
+        </ul>
+
+        <h3 class="h6 pt-2 pt-lg-3">Conclusion</h3>
+        <p>
+          Personne ne mérite de subir des violences. Si vous êtes victime de VBG, sachez qu’il existe des 
+          structures prêtes à vous écouter, vous protéger et vous accompagner dans votre reconstruction. 
+          Chaque pas que vous faites pour chercher de l’aide est un acte de courage.
+        </p>
+      </div>
+    </div>
+  </div>
 </template>
 
 <style scoped>
