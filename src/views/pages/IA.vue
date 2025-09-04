@@ -35,22 +35,37 @@
 </template>
 
 <script setup>
-import { ref, nextTick } from 'vue';
+import { ref, nextTick, onMounted } from 'vue';
 
-const messages = ref([
-  { from: 'ia', text: "Bonjour ! Je suis là pour discuter avec vous 😊" }
-]);
+// --- Messages ---
+const messages = ref([]);
 const newMessage = ref("");
 const textarea = ref(null);
 
+// --- Charger les messages depuis localStorage ---
+onMounted(() => {
+  const stored = localStorage.getItem('chatMessages');
+  if (stored) messages.value = JSON.parse(stored);
+  if (!messages.value.length) {
+    messages.value.push({ from: 'ia', text: "Bonjour ! Je suis là pour discuter avec vous 😊" });
+  }
+  nextTick(scrollToBottom);
+});
+
+// --- Envoyer message ---
 function sendMessage() {
   if (!newMessage.value.trim()) return;
 
+  // Message utilisateur
   messages.value.push({ from: 'user', text: newMessage.value });
+  saveMessages();
 
+  // Réponse IA simulée
   setTimeout(() => {
-    messages.value.push({ from: 'ia', text: `IA: Vous avez dit "${newMessage.value}"` });
-    scrollToBottom();
+    const iaResponse = generateIAResponse(newMessage.value);
+    messages.value.push({ from: 'ia', text: iaResponse });
+    saveMessages();
+    nextTick(scrollToBottom);
   }, 500);
 
   newMessage.value = "";
@@ -60,15 +75,40 @@ function sendMessage() {
   });
 }
 
+// --- Simuler réponse IA basée sur ton JSON ---
+function generateIAResponse(userText) {
+  const keywords = {
+    "violence": "Il semble que vous mentionniez un cas de violence. Pouvez-vous préciser le type ?",
+    "harcèlement": "Le harcèlement est un sujet sérieux. Voulez-vous des conseils ou des ressources ?",
+    "mariage": "Merci pour cette précision. S'agit-il d'un mariage forcé ?",
+    "mutilation": "La mutilation génitale est une violation grave. Voulez-vous en discuter plus ?",
+    "discrimination": "La discrimination de genre est un problème important. Pouvez-vous donner plus de détails ?"
+  };
+
+  const lowerText = userText.toLowerCase();
+  for (const key in keywords) {
+    if (lowerText.includes(key)) return keywords[key];
+  }
+
+  return "Merci pour votre message. Pouvez-vous donner plus de détails ?";
+}
+
+// --- Scroll automatique ---
 function scrollToBottom() {
   const container = document.getElementById('chatMessages');
   if (container) container.scrollTop = container.scrollHeight;
 }
 
+// --- Auto-resize textarea ---
 function resizeTextarea() {
   if (!textarea.value) return;
   textarea.value.style.height = 'auto';
   textarea.value.style.height = Math.min(textarea.value.scrollHeight, 4.5 * 16) + 'px';
+}
+
+// --- Sauvegarder messages dans localStorage ---
+function saveMessages() {
+  localStorage.setItem('chatMessages', JSON.stringify(messages.value));
 }
 </script>
 
@@ -96,7 +136,7 @@ function resizeTextarea() {
   border-radius: 4px;
 }
 
-/* Wrapper des messages pour espacement */
+/* Wrapper des messages */
 .message-wrapper {
   margin-bottom: .7rem;
   display: flex;
@@ -109,37 +149,37 @@ function resizeTextarea() {
   max-width: 80%;
   word-wrap: break-word;
   line-height: 1.5;
-  white-space: pre-line; /* préserve les retours à la ligne */
+  white-space: pre-line;
 }
 
-/* Bulles utilisateur alignées à droite */
+/* Bulles utilisateur */
 .user-bubble {
-  background-color: #343a40; /* bg-dark */
+  background-color: #343a40;
   color: white;
   margin-left: auto;
 }
 
-/* Bulles IA alignées à gauche */
+/* Bulles IA */
 .ia-bubble {
-  background-color: #6c757d; /* bg-secondary */
+  background-color: #6c757d;
   color: white;
   margin-right: auto;
 }
 
-/* Input collé en bas, mais sur mobile laisse espace clavier */
+/* Input collé en bas */
 .chat-input {
   flex-shrink: 0;
   display: flex;
   gap: 8px;
-  align-items: flex-end; /* garde le bouton aligné */
+  align-items: flex-end;
 }
 
-/* Fixer la hauteur du bouton */
+/* Bouton envoyer fixe */
 .send-button {
-  height: 2.5rem; 
+  height: 2.5rem;
 }
 
-/* Pour mobiles : padding bottom avec safe area */
+/* Mobile safe area */
 @media (max-width: 576px) {
   .chat-card {
     height: calc(100vh - 6.5rem);

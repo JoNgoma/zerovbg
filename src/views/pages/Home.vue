@@ -119,8 +119,8 @@ function showResource() {
               <!-- Ce que tu peux faire -->
               <div class="nav gap-2 fs-sm pt-3 mt-md-1 mt-lg-2 mt-xl-3" data-bs-theme="dark">
                 <span class="text-body me-2">Agir au plus vite :</span>
-                <a class="nav-link hover-effect-underline p-0 me-2" href="#!">Assisttance virtuelle</a>
-                <a class="nav-link hover-effect-underline p-0 me-2" href="#!">Nous contacter par mail</a>
+                <router-link :to="{ name : 'i-ia'}" class="nav-link hover-effect-underline p-0 me-2">Assisttance virtuelle</router-link>
+                <router-link :to="{ name : 'i-mail'}" class="nav-link hover-effect-underline p-0 me-2">Nous contacter par mail</router-link>
               </div>
             </div>
 
